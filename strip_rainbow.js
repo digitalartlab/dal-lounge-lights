@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-// Simple red/blue fade with Node and opc.js
+// Simple rainbow through all the pixels
 
 var OPC = new require('./opc')
 var client = new OPC('localhost', 7890);

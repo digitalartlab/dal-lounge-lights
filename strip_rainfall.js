@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+// Rainbow wave with random black pixels
+
 var OPC = new require('./opc')
 var client = new OPC('localhost', 7890);
 
@@ -53,4 +55,3 @@ function logPixel() {
 
 setInterval(draw, 175);
 setInterval(pickPixel, 3);
-// setInterval(logPixel, 3000);
