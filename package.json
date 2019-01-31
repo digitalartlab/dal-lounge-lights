@@ -1,0 +1,8 @@
+{
+  "name": "led-effecten",
+  "dependencies": {
+    "flags": "~0.1.3",
+    "minimist": "~1.2.0",
+    "simplex-noise": "~2.4.0"
+  }
+}
