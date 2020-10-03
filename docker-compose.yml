@@ -1,0 +1,27 @@
+version: '2'
+networks:
+  static:
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.20.0.0/29
+          gateway: 172.20.0.1
+
+services:
+  fcserver:
+    restart: always
+    build: ./fcserver
+    privileged: true
+    ports:
+      - "7890:7890"
+    networks:
+      static:
+        ipv4_address: 172.20.0.2
+  animator:
+    restart: always
+    build: ./animator
+    depends_on:
+      - fcserver
+    networks:
+      static:
+        ipv4_address: 172.20.0.3

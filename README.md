@@ -1,17 +1,15 @@
-# Led Effects
+# Lounge LED Light Effects
+This project contains the code to control the LED strips in our Lounge.
 
-Node.js code to run various effects on our [Fadecandy](https://github.com/scanlime/fadecandy) equiped led bars.
+## Architecture
+### LED Animator
+The JavaScript project that generates the patterns for all 960 LEDs in our strips (yes, we control them per pixel. It's very fancy). Each effect is an individual JS file. We're working on organising the project a bit better to make it easier to switch and control the effects. To be continued for sure.
 
-## Layout
+### Fadecandy Server (fcserver)
+The software for our controller boards. We use two Fadecandy controllers, each controlling 8 strips of 60 LEDs each. They're connected to a Raspberry Pi with USB. You input OPC commands and the server automagically turns it into almost 1000 sparkling lights.
 
-16 led bars with 60 leds each.
+> Fadecandy is an amazing open source project. Read more about it on [their GitHub repo](https://github.com/scanlime/fadecandy).
 
-## Getting started
-
-> **Building your own?** Check out [this amazing tutorial at Adafruit](https://learn.adafruit.com/1500-neopixel-led-curtain-with-raspberry-pi-fadecandy/overview). Whilst we're not building a curtain, the basic techniques, such as calculating power usage and setting up the Raspberry Pi, are identical.
-
-### Run on our Raspberry Pi
-1. Upload JavaScript file to Raspberry Pi
-2. Edit `foreverStartup.js` to use your JS file
-3. Restart Pi
-4. Led (:wink:) there be light
+## Hardware
+### LED strips
+We use WS2811 LED strips that are connected to Fadecandy controller boards. Each strip has 60 LEDs and we have 16 strips in total. That makes for a **total of 960 RGB LEDs**.
