@@ -18,6 +18,8 @@ These tiny dedicated controller boards control the data signal for eight LED str
 We use WS2811 LED strips that are connected to Fadecandy controller boards. Each strip has 60 LEDs and we have 16 strips in total. That makes for a **total of 960 RGB LEDs**.
 
 ### Power supplies
+> **Warning!** This design uses high amperage, which can cause *severe injuries or death* when not handled properly. Electricity is not a toy, so make sure you know what you're doing, or get help from someone who does. And (obviously) never work on a live circuit.
+
 We use a dedicated power supply for each 'side' of the bars. Our strips use 5V and the maximum draw of each side is 30A. So, that's a 150W PSU on each side for 300W in total. Keep in mind you'll hardly ever really draw that much power: it only happens when you're on full white for all strips (and that's just boring).
 
 ## Architecture overview
