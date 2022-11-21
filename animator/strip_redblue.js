@@ -3,7 +3,7 @@
 // Simple red/blue fade with Node and opc.js
 
 var OPC = new require('./opc')
-var client = new OPC('localhost', 7890);
+var client = new OPC('172.20.0.2', 7890);
 
 function draw() {
     var millis = new Date().getTime();

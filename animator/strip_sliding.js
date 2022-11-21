@@ -3,7 +3,7 @@
 // Rainbow with white stripe sliding through
 
 var OPC = new require('./opc')
-var client = new OPC('localhost', 7890);
+var client = new OPC('172.20.0.2', 7890);
 
 var glowPixels = new Array();
 var randomPixel;
