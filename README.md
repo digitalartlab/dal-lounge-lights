@@ -25,6 +25,15 @@ We use a dedicated power supply for each 'side' of the bars. Our strips use 5V a
 ## Architecture overview
 ![Architecture sketch](docs/architecture-drawing.png)
 
+## Local development
+Since we use the Open Pixel Protocol to control the LED strips, we can use that same protocol to control a virtual preview. This way we can develop the effects locally and see the results immediately.
+
+### OPC simulator
+- Clone the [Open Pixel Control](https://github.com/zestyping/openpixelcontrol) repository
+- Run `make` in the root of the repository to build the simulator
+- Run `bin/gl_server -l [path to layout]` to start the simulator. Replace `[path to layout]` with the path to the `animator/layouts/strips60x16.json` file in this repository
+- Point your code to `127.0.0.1:7890` to send OPC commands to the simulator
+
 ## Deploying
 We use Balena to release new versions of this project. That means that deployment (for now) is only possible if you have access to the Balena project.
 
