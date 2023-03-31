@@ -20,16 +20,13 @@ function draw() {
         // Which pixel are we in the current strip?
         const pixelInStrip = pixel % 60;
 
-        var t = pixelInStrip * 0.25 + millis * 0.001 + strip;
+        var t = pixelInStrip * 0.1 + millis * 0.002 + strip;
 
         // Calculate the hue of this pixel
-        let hue = Math.sin(t)*0.1 + 0.5;
-
-        // Calculate the saturation of this pixel
-        let saturation = 1;
+        let hue = Math.sin(t*0.5)*0.1 + 0.5;
 
         // Convert the hue to RGB
-        let colors = OPC.hsv(hue, saturation, 1);
+        let colors = OPC.hsv(hue, 1, 1);
 
         // Send the RGB values on this pixel
         client.setPixel(pixel, colors[0], colors[1], colors[2]);
