@@ -43,7 +43,7 @@ If you do, it's pretty simple: run `balena push dal-lounge-lights` and wait for 
 **These LED strips are yours to play with too!** See [CONTRIBUTING](CONTRIBUTING.md) for all the information you need to shine your light. Okay, we'll stop the puns now.
 
 ## License
-MIT
+This project is licensed under the GNU General Public License v3.0. See the [LICENSE](LICENSE) file for details.
 
 ## Thanks
 This project wouldn't be possible without the amazing open source Fadecandy project. Read more about it on [their GitHub repo](https://github.com/scanlime/fadecandy).

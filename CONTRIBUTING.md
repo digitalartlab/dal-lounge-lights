@@ -5,7 +5,7 @@ Thank you for wanting to contribute to this project! We love open source project
 Please take a moment to review our contributing guidelines, so this becomes a smooth process for both you and us.
 
 ## Code of Conduct
-At Digital Art Lab we work hard to make everyone feel welcome and included, both online and offline. That's why we have a [Code of Conduct](CODE_OF_CONDUCT.md). We expect everyone (that includes us) to stick to this code and treat each other respectfully.
+At Digital Art Lab we work hard to make everyone feel welcome and included, both online and offline. That's why we have a [Code of Conduct](https://github.com/digitalartlab/.github/blob/main/CODE_OF_CONDUCT.md). We expect everyone (that includes us) to stick to this code and treat each other respectfully.
 
 ## :sparkles: Submitting new animations or updating existing ones
 **These LED strips are yours to play with too!** Feel free to tweak an existing animation or add a brand new one. Once you're ready to see it in action, just create a pull request, so we can deploy it to the live strips!
