@@ -6,6 +6,6 @@
     "simplex-noise": "~2.4.0"
   },
   "scripts": {
-    "start": "node ./strip_yellowpink.js"
+    "start": "node ./strip_redblue.js"
   }
 }
