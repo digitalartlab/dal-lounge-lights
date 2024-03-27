@@ -1,5 +1,5 @@
 # Lounge LED Light Effects
-This project contains the code to control the LED strips in our Lounge. See how we built them (and how pretty they are) [in our blog post (Dutch)](https://digitalartlab.nl/blog/1625-allemaal-lichtjes).
+This project contains the code to control the LED strips in our Lounge. See how we built them (and how pretty they are) [in our blog post (Dutch)](https://digitalartlab.nl/snippet/826/allemaal-lichtjes/).
 
 ## Software
 ### Animator
