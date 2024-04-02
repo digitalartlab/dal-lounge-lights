@@ -1,3 +1,6 @@
+> [!NOTE]  
+> This branch is for workshops where we want to give participants direct access to `fcserver` over the network, so they can live prototype on the LED strips. Not something you'd normally do. So... don't use this branch, basically.
+
 # Lounge LED Light Effects
 This project contains the code to control the LED strips in our Lounge. See how we built them (and how pretty they are) [in our blog post (Dutch)](https://digitalartlab.nl/blog/1625-allemaal-lichtjes).
 
