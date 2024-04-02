@@ -25,17 +25,21 @@ We use a dedicated power supply for each 'side' of the bars. Our strips use 5V a
 ## Architecture overview
 ![Architecture sketch](docs/architecture-drawing.png)
 
-## Local development
-Since we use the Open Pixel Protocol to control the LED strips, we can use that same protocol to control a virtual preview. This way we can develop the effects locally and see the results immediately.
+## Development
 
-### OPC simulator
+### Examples
+To create an animation, all you need to do is create 960 values and send them to `fcserver` using Open Pixel Control. We're using JavaScript here, but it can be done in a number of languages. Check out the [examples in the Fadecandy project repository](https://github.com/PimentNoir/fadecandy/tree/master/examples) to select your favourite language!
+
+### Simulator
+Since we use the Open Pixel Protocol to control the LED strips, we can use that same protocol to create a virtual preview. This way we can develop the effects locally and see the results immediately.
+
 - Clone the [Open Pixel Control](https://github.com/zestyping/openpixelcontrol) repository
 - Run `make` in the root of the repository to build the simulator
 - Run `bin/gl_server -l [path to layout]` to start the simulator. Replace `[path to layout]` with the path to the `animator/layouts/strips60x16.json` file in this repository
 - Point your code to `127.0.0.1:7890` to send OPC commands to the simulator
 
-## Deploying
-We use Balena to release new versions of this project. That means that deployment (for now) is only possible if you have access to the Balena project.
+### Deploying
+We use Balena Cloud to release new versions of this project. That means that deployment (for now) is only possible if you have access to the Balena project.
 
 If you do, it's pretty simple: run `balena push dal-lounge-lights` and wait for the unicorn to show up.
 
@@ -46,4 +50,6 @@ If you do, it's pretty simple: run `balena push dal-lounge-lights` and wait for 
 This project is licensed under the GNU General Public License v3.0. See the [LICENSE](LICENSE) file for details.
 
 ## Thanks
-This project wouldn't be possible without the amazing open source Fadecandy project. Read more about it on [their GitHub repo](https://github.com/scanlime/fadecandy).
+This project wouldn't be possible without the amazing open source Fadecandy project. Sadly, the original project by Scanlime is lost to time, but our appreciation still stands.
+
+In related news: lots of thanks to PimentNoir for [creating a fork](https://github.com/PimentNoir/fadecandy) that we can continue to use!
